@@ -67,11 +67,18 @@ header {
     margin-bottom: 150px;
 }
 
+.top-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
 .top-slide__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    min-height: 700px;
 }
 
 .top-slide__content {
@@ -103,4 +110,29 @@ header {
     padding: 21px 55px;
     border: 1px solid #7449BB;
     display: inline-block;
+    margin-left: auto;
+    transition: all 3s ease;
+}
+
+.top-slide__btn:hover {
+    color: #fff;
+    background-color: #7449BB;
+}
+.container-arrow {
+    position: relative;
+    padding: 0;
+    max-width: 1200px;
+}
+.swiper-button-prev:after, 
+.swiper-button-next:after {
+    content: none;
+}
+
+.top, .swiper {
+    padding-bottom: 50px;
+}
+
+.swiper-button-next {
+    left: 75px;
+    right: auto;
 }
